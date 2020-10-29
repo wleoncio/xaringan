@@ -1,3 +1,6 @@
+# CHANGES IN xaringan VERSION 0.19
+
+
 # CHANGES IN xaringan VERSION 0.18
 
 - The option `self_contained: true` for the output format `xaringan::moon_reader` supports images written in the syntax `![]()` (Markdown), `background-image: url()` (background images for slides), and `<img src="" />` (HTML) now. Slides generated in the self-contained mode are also much faster to render in web browsers now, especially for slides containing a lot of images (thanks, @srvanderplas #207, @wolass @RLesur @jaredlander #3).
@@ -5,6 +8,8 @@
 - The two internal functions `xaringan:::protect_math()` and `xaringan:::prose_index()` have been removed. They are in the **xfun** package now, so please use `xfun::protect_math()` and `xfun::prose_index()` instead.
 
 - Added UiO theme (thanks, @wleoncio, #270).
+
+- The option `anchor_sections` is disabled by default in `moon_reader()`. This option is for `rmarkdown::html_document()` to generate anchor links for sections, which is not really useful for **xaringan** slides.
 
 # CHANGES IN xaringan VERSION 0.17
 
